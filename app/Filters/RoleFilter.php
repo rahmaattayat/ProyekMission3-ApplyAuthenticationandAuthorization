@@ -17,15 +17,12 @@ class RoleFilter implements FilterInterface
         }
 
         if (! empty($arguments) && is_array($arguments)) {
-            // contoh: ['admin'] atau ['student']
             if (! in_array($role, $arguments, true)) {
-                // role tidak sesuai, kembalikan ke tempat yang benar
                 return ($role === 'admin')
                     ? redirect()->to('/admin/dashboard')->with('error', 'Tidak punya akses.')
                     : redirect()->to('/student/dashboard')->with('error', 'Tidak punya akses.');
             }
         }
-        // allow
     }
 
     public function after(RequestInterface $request, ResponseInterface $response, $arguments = null)

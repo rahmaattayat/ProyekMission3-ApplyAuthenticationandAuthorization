@@ -1,8 +1,7 @@
 <?php
 $role   = session()->get('role');
-$uri    = service('uri')->getPath(); // contoh: "admin/courses"
+$uri    = service('uri')->getPath(); 
 
-// helper kelas aktif untuk sidebar
 if (!function_exists('nav_active')) {
   function nav_active(string $prefix, string $uri): string {
     return str_starts_with($uri, $prefix)
@@ -17,7 +16,6 @@ if (!function_exists('nav_active')) {
   <meta charset="utf-8">
   <title><?= esc($title ?? 'Kampus App') ?></title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- Tailwind via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50 text-gray-900">
@@ -45,7 +43,7 @@ if (!function_exists('nav_active')) {
 
   <?php $isAdmin = ($role === 'admin'); ?>
 
-  <!-- Sidebar kiri (admin only) -->
+  <!-- Sidebar kiri -->
   <?php if ($isAdmin): ?>
 <aside
   class="fixed left-0 top-[56px] bottom-0 w-60 bg-white border-r border-gray-200 z-30 overflow-y-auto">

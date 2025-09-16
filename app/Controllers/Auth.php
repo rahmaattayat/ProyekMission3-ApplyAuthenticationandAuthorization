@@ -25,10 +25,10 @@ class Auth extends BaseController
 
         $userM = new UserModel();
 
-        // login pakai username (atau email juga boleh kalau mau)
+        // login pakai username 
         $user = $userM->where('username', $username)->first();
         if (! $user) {
-            // coba sebagai email (opsional)
+            // sebagai email 
             $user = $userM->where('email', $username)->first();
         }
 
@@ -40,14 +40,12 @@ class Auth extends BaseController
             return redirect()->back()->with('error', 'Akun dinonaktifkan. Hubungi admin.');
         }
 
-        // 🔒 set session dengan kunci yang disepakati filter
         $sessData = [
-            'isLoggedIn' => true,                 // <- kunci standar untuk filter
+            'isLoggedIn' => true,                 
             'user_id'    => (int) $user->user_id,
-            'role'       => $user->role,          // 'admin' atau 'student'
+            'role'       => $user->role,          
             'username'   => $user->username,
             'full_name'  => $user->full_name,
-            // juga simpan versi array agar view lama yang expect 'user' tetap jalan
             'user'       => [
                 'user_id'   => (int) $user->user_id,
                 'full_name' => $user->full_name,
@@ -55,10 +53,9 @@ class Auth extends BaseController
             ],
         ];
 
-        session()->regenerate(true);  // ganti session id (keamanan)
+        session()->regenerate(true);  
         session()->set($sessData);
 
-        // arahkan sesuai role
         return ($user->role === 'admin')
             ? redirect()->to('/admin/dashboard')
             : redirect()->to('/student/dashboard');

@@ -7,10 +7,6 @@ use App\Models\TakeModel;
 
 class Enroll extends BaseController
 {
-    /**
-     * Halaman daftar course untuk student.
-     * Menyediakan: semua courses, id courses yang sudah diambil, dan daftar course detail yang sudah diambil.
-     */
     public function index()
     {
         $userId  = session()->get('user_id');
@@ -30,7 +26,7 @@ class Enroll extends BaseController
                           ->where('student_id', $student->student_id)
                           ->findColumn('course_id') ?? [];
 
-        // daftar course yang sudah diambil (untuk tabel bawah)
+        // daftar course yang sudah diambil 
         $takenCourses = !empty($takenIds)
             ? $courseM->whereIn('course_id', $takenIds)->orderBy('course_code')->findAll()
             : [];
@@ -38,14 +34,11 @@ class Enroll extends BaseController
         return view('students/enroll', [
             'student'      => $student,
             'courses'      => $courses,
-            'takenIds'     => $takenIds,     // array of int
-            'takenCourses' => $takenCourses, // array of objects
+            'takenIds'     => $takenIds,     
+            'takenCourses' => $takenCourses, 
         ]);
     }
 
-    /**
-     * Ambil course
-     */
     public function store($course_id)
     {
         $userId  = session()->get('user_id');
@@ -81,9 +74,7 @@ class Enroll extends BaseController
         return redirect()->to('/student/enroll')->with('success', 'Course berhasil diambil.');
     }
 
-    /**
-     * Batalkan course yang sudah diambil
-     */
+    // Batalkan course yang sudah diambil
     public function drop($course_id)
     {
         $userId  = session()->get('user_id');

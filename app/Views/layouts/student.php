@@ -1,5 +1,4 @@
 <?php
-// segmen aktif (support /index.php/... juga)
 $uri    = service('uri');
 $active = ($uri->getSegment(1) === 'index.php') ? $uri->getSegment(3) : $uri->getSegment(2);
 
@@ -17,7 +16,7 @@ $fullName = is_array($user) ? ($user['full_name'] ?? 'Student') : ($user->full_n
 </head>
 <body class="bg-gray-50 text-gray-900">
 
-  <!-- TOPBAR (sama pola dengan admin) -->
+  <!-- TOPBAR -->
   <header class="w-full bg-white border-b">
     <div class="px-6 py-3 flex items-center justify-between">
       <div class="font-semibold">Kampus App</div>
@@ -28,9 +27,7 @@ $fullName = is_array($user) ? ($user['full_name'] ?? 'Student') : ($user->full_n
     </div>
   </header>
 
-  <!-- BODY: sidebar kiri nempel + konten kanan -->
-  <div class="min-h-[calc(100vh-56px)] flex"> <!-- tinggi layar - tinggi topbar -->
-    <!-- SIDEBAR KIRI (menempel ke tepi kiri layar) -->
+  <div class="min-h-[calc(100vh-56px)] flex"> 
     <aside class="w-64 bg-white border-r">
       <div class="px-4 py-4 font-semibold">Menu</div>
       <nav class="px-2 pb-6 text-sm">
@@ -45,7 +42,6 @@ $fullName = is_array($user) ? ($user['full_name'] ?? 'Student') : ($user->full_n
       </nav>
     </aside>
 
-    <!-- KONTEN KANAN -->
     <main class="flex-1">
       <div class="px-6 py-6">
         <div class="bg-white border rounded-xl p-6">

@@ -3,7 +3,7 @@ namespace App\Controllers;
 
 use App\Models\UserModel;
 use App\Models\StudentModel;
-use App\Models\TakeModel; // ⬅️ pastikan di-import
+use App\Models\TakeModel; 
 
 class Student extends BaseController
 {
@@ -15,7 +15,6 @@ class Student extends BaseController
         ]);
     }
 
-    // ✅ DETAIL STUDENT + daftar course yang diambil
     public function show($id)
     {
         $m = new StudentModel();
@@ -38,7 +37,6 @@ class Student extends BaseController
             'totalCredits' => $totalCredits,
         ]);
     }
-    // ========================================================
 
     public function new()
     {

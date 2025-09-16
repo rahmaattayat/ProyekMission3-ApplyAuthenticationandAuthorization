@@ -52,7 +52,6 @@ $btnLabel = $isEdit ? 'Simpan' : 'Tambah';
              value="<?= esc(old('entry_year', $isEdit ? $student->entry_year : date('Y'))) ?>" required>
     </div>
 
-    <!-- CHANGED: Jurusan jadi input text -->
     <div>
       <label class="block text-sm mb-1">Jurusan</label>
       <input name="major" class="w-full border rounded px-3 py-2"
