@@ -1,0 +1,191 @@
+CRITICAL - 2025-09-03 06:33:36 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "hello amaw!.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('hello amaw!.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('hello amaw!', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('hello amaw!')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-03 06:34:33 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "hello amaw!.php"
+[Method: GET, Route: hello]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('hello amaw!.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('hello amaw!', [], true)
+ 3 APPPATH\Controllers\hello.php(8): view('hello amaw!')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Hello->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hello))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ci4web\\public\\index.php')
+CRITICAL - 2025-09-03 07:16:26 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\MahasiswaModel::getMahasiswa
+[Method: GET, Route: Mahasiswa2/display]
+in SYSTEMPATH\Model.php on line 927.
+ 1 APPPATH\Controllers\Mahasiswa.php(8): CodeIgniter\Model->__call('getMahasiswa', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mahasiswa->display()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-03 07:17:18 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\MahasiswaModel::getMahasiswa
+[Method: GET, Route: Mahasiswa]
+in SYSTEMPATH\Model.php on line 927.
+ 1 APPPATH\Controllers\Mahasiswa.php(8): CodeIgniter\Model->__call('getMahasiswa', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mahasiswa->display()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-03 07:17:34 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\MahasiswaModel::getMahasiswa
+[Method: GET, Route: Mahasiswa/display]
+in SYSTEMPATH\Model.php on line 927.
+ 1 APPPATH\Controllers\Mahasiswa.php(8): CodeIgniter\Model->__call('getMahasiswa', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mahasiswa->display()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-03 07:18:12 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\MahasiswaModel::getMahasiswa
+[Method: GET, Route: Mahasiswa]
+in SYSTEMPATH\Model.php on line 927.
+ 1 APPPATH\Controllers\Mahasiswa.php(8): CodeIgniter\Model->__call('getMahasiswa', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mahasiswa->display()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-03 07:18:42 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\MahasiswaModel::getMahasiswa
+[Method: GET, Route: Mahasiswa]
+in SYSTEMPATH\Model.php on line 927.
+ 1 APPPATH\Controllers\Mahasiswa.php(8): CodeIgniter\Model->__call('getMahasiswa', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mahasiswa->display()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-03 07:18:43 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\MahasiswaModel::getMahasiswa
+[Method: GET, Route: Mahasiswa]
+in SYSTEMPATH\Model.php on line 927.
+ 1 APPPATH\Controllers\Mahasiswa.php(8): CodeIgniter\Model->__call('getMahasiswa', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mahasiswa->display()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-03 07:18:43 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\MahasiswaModel::getMahasiswa
+[Method: GET, Route: Mahasiswa]
+in SYSTEMPATH\Model.php on line 927.
+ 1 APPPATH\Controllers\Mahasiswa.php(8): CodeIgniter\Model->__call('getMahasiswa', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mahasiswa->display()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-03 07:18:45 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\MahasiswaModel::getMahasiswa
+[Method: GET, Route: Mahasiswa]
+in SYSTEMPATH\Model.php on line 927.
+ 1 APPPATH\Controllers\Mahasiswa.php(8): CodeIgniter\Model->__call('getMahasiswa', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mahasiswa->display()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-03 07:18:45 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\MahasiswaModel::getMahasiswa
+[Method: GET, Route: Mahasiswa]
+in SYSTEMPATH\Model.php on line 927.
+ 1 APPPATH\Controllers\Mahasiswa.php(8): CodeIgniter\Model->__call('getMahasiswa', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mahasiswa->display()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-03 07:18:46 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\MahasiswaModel::getMahasiswa
+[Method: GET, Route: Mahasiswa]
+in SYSTEMPATH\Model.php on line 927.
+ 1 APPPATH\Controllers\Mahasiswa.php(8): CodeIgniter\Model->__call('getMahasiswa', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mahasiswa->display()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-03 07:18:46 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\MahasiswaModel::getMahasiswa
+[Method: GET, Route: Mahasiswa]
+in SYSTEMPATH\Model.php on line 927.
+ 1 APPPATH\Controllers\Mahasiswa.php(8): CodeIgniter\Model->__call('getMahasiswa', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mahasiswa->display()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-03 07:19:02 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\MahasiswaModel::getMahasiswa
+[Method: GET, Route: Mahasiswa]
+in SYSTEMPATH\Model.php on line 927.
+ 1 APPPATH\Controllers\Mahasiswa.php(8): CodeIgniter\Model->__call('getMahasiswa', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mahasiswa->display()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-03 07:19:02 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\MahasiswaModel::getMahasiswa
+[Method: GET, Route: Mahasiswa]
+in SYSTEMPATH\Model.php on line 927.
+ 1 APPPATH\Controllers\Mahasiswa.php(8): CodeIgniter\Model->__call('getMahasiswa', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mahasiswa->display()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-03 07:21:06 --> Error: Class "App\Models\MahasiswaModel" not found
+[Method: GET, Route: Mahasiswa]
+in APPPATH\Controllers\Mahasiswa.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mahasiswa->display()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-03 07:21:07 --> Error: Class "App\Models\MahasiswaModel" not found
+[Method: GET, Route: Mahasiswa]
+in APPPATH\Controllers\Mahasiswa.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mahasiswa->display()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-03 07:21:53 --> Error: Class "App\Models\MahasiswaModel" not found
+[Method: GET, Route: Mahasiswa/display]
+in APPPATH\Controllers\Mahasiswa.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mahasiswa->display()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-03 07:22:15 --> Error: Class "App\Models\MahasiswaModel" not found
+[Method: GET, Route: mahasiswa/display]
+in APPPATH\Controllers\Mahasiswa.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mahasiswa->display()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
